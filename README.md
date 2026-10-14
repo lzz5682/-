@@ -56,22 +56,42 @@ homepage/
 --bone: #cdc8b8;   /* 正文纸张色 */
 ```
 
-## 部署到 GitHub Pages
+## 线上部署
 
-仓库名用 `Lizhizhuo.github.io`，发布后访问地址是 **https://lizhizhuo.github.io/**
+| 项 | 值 |
+| --- | --- |
+| 仓库 | https://github.com/lzz5682/- |
+| 发布方式 | Deploy from a branch |
+| 分支 / 目录 | `main` / `(root)` |
+| 访问地址 | **https://lzz5682.github.io/-/** |
+
+代码已经推上去了。**最后一步是要在网页上开启一次 Pages**（仓库管理员权限才行，脚本做不了）：
+
+1. 打开 https://github.com/lzz5682/-/settings/pages
+2. **Source** 选 `Deploy from a branch`
+3. **Branch** 选 `main`，目录选 `/ (root)`，点 **Save**
+4. 等 1 分钟左右，访问 https://lzz5682.github.io/-/
+
+开启之后就不用再管了 —— 以后每次改完内容 `git push`，网站会自动重新发布。
+
+### 以后更新的流程
 
 ```bash
-git init
 git add .
-git commit -m "init: 黑流树海风格个人主页"
-git branch -M main
-git remote add origin https://github.com/Lizhizhuo/Lizhizhuo.github.io.git
-git push -u origin main
+git commit -m "update: 改了什么"
+git push
 ```
 
-然后在仓库页面进入 **Settings → Pages**，把 **Source** 设为 `Deploy from a branch`，**Branch** 选 `main` / `(root)`，保存。
+### 为什么不用自定义域名
 
-约一分钟后访问 `https://lizhizhuo.github.io/`。
+仓库名是 `-`，URL 里会多一截 `/-/`。如果以后想要更干净的
+`https://lzz5682.github.io/`，有两种改法：
+
+- 把仓库改名为 `lzz5682.github.io`（Settings → Repository name），Pages 会直接跟着改
+- 或者买个域名，在 Pages 设置里填 Custom domain
+
+两种改法都不用动代码，因为这个站点的资源路径全部是相对路径。
+
 
 ## 本地预览
 
