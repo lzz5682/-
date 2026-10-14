@@ -23,7 +23,7 @@ homepage/
 | 页面标题 | 李志卓 · 黑流树海 |
 | 大标题 | 李志卓 / LIZHIZHUO |
 | 签名 | 我于此言语，即为丧钟的王庭。 |
-| GitHub | [@Lizhizhuo](https://github.com/Lizhizhuo) |
+| GitHub | [@lzz5682](https://github.com/lzz5682) |
 | 哔哩哔哩 | IGD乱糟糟 |
 | 邮箱 | 22300548@qq.com |
 
